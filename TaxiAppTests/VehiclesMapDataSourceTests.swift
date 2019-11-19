@@ -56,7 +56,7 @@ class VehiclesMapDataSourceTests: XCTestCase {
         
         // giving a sample json file
         guard let data = FileManager.readJson(forResource: "sample",
-                                              bundle: Bundle(for: VehiclesServiceTests.self))  else {
+                                              bundle: Bundle(for: VehiclesServiceTests.self)) else {
                                                 XCTAssert(false, "Can't get data from sample.json")
                                                 return
         }

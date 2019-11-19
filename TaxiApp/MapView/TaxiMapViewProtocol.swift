@@ -9,5 +9,6 @@
 import Foundation
 
 @objc protocol TaxiMapViewProtocol {
-    func visibleRegionChanged(to point1: Location, from point2: Location)
+    func visibleRegionChanged(to point1: Location,
+                              from point2: Location)
 }

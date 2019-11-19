@@ -12,9 +12,11 @@ extension FileManager {
     
     static func readJson(forResource fileName: String,
                          bundle: Bundle? = .main) -> Data? {
-        if let path = bundle?.path(forResource: fileName, ofType: "json") {
+        if let path = bundle?.path(forResource: fileName,
+                                   ofType: "json") {
             do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let data = try Data(contentsOf: URL(fileURLWithPath: path),
+                                    options: .mappedIfSafe)
                 return data
             } catch {
                 // handle error

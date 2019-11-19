@@ -59,10 +59,14 @@ class VehiclesMapDataSource: NSObject, VehiclesDataSource, MapViewDataSource {
     
     private func getRectangle(location1: Location,
                               location2: Location) -> MKPolygon {
-        let clLocation1 = CLLocationCoordinate2D(latitude: location1.latitude, longitude: location1.longitude)
-        let clLocation2 = CLLocationCoordinate2D(latitude: location1.latitude, longitude: location2.longitude)
-        let clLocation3 = CLLocationCoordinate2D(latitude: location2.latitude, longitude: location2.longitude)
-        let clLocation4 = CLLocationCoordinate2D(latitude: location2.latitude, longitude: location1.longitude)
+        let clLocation1 = CLLocationCoordinate2D(latitude: location1.latitude,
+                                                 longitude: location1.longitude)
+        let clLocation2 = CLLocationCoordinate2D(latitude: location1.latitude,
+                                                 longitude: location2.longitude)
+        let clLocation3 = CLLocationCoordinate2D(latitude: location2.latitude,
+                                                 longitude: location2.longitude)
+        let clLocation4 = CLLocationCoordinate2D(latitude: location2.latitude,
+                                                 longitude: location1.longitude)
         let rect = MKPolygon(coordinates: [clLocation1,
                                            clLocation2,
                                            clLocation3,

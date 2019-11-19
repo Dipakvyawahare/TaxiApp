@@ -19,7 +19,8 @@ class VehicleViewModelTests: XCTestCase {
         super.setUp()
         service = MockVehicleService()
         dataSource = MockVehiclesDataSource()
-        viewModel = VehiclesViewModel(service: service, dataSources: [dataSource])
+        viewModel = VehiclesViewModel(service: service,
+                                      dataSources: [dataSource])
     }
 
     override func tearDown() {
