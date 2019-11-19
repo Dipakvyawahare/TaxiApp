@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EvR-6Y-UDn">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EvR-6Y-UDn">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +21,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8d-Aq-ngx">
-                                <rect key="frame" x="15" y="25" width="46" height="46"/>
+                                <rect key="frame" x="15" y="5" width="46" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="lPK-yO-NfH"/>
@@ -81,13 +79,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taxibg" translatesAutoresizingMaskIntoConstraints="NO" id="fUp-Cr-2jq">
-                                <rect key="frame" x="0.0" y="366" width="320" height="172"/>
+                                <rect key="frame" x="0.0" y="386" width="320" height="172"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fUp-Cr-2jq" secondAttribute="height" multiplier="80:43" id="fa5-kG-8Dl"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e1-3n-0lC">
-                                <rect key="frame" x="5" y="90" width="310" height="36"/>
+                                <rect key="frame" x="5" y="70" width="310" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <state key="normal" title="Display Fixed Bounds Vehicles(1.1)"/>
                                 <connections>
@@ -95,7 +94,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf4-GI-hoZ">
-                                <rect key="frame" x="52.5" y="166" width="215" height="36"/>
+                                <rect key="frame" x="52.5" y="126" width="215" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <state key="normal" title="Display All Vehicles(1.2)"/>
                                 <connections>
@@ -106,13 +106,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5e1-3n-0lC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="36s-kb-U6I" secondAttribute="leading" constant="5" id="9ya-ny-D6g"/>
-                            <constraint firstItem="hf4-GI-hoZ" firstAttribute="top" secondItem="5e1-3n-0lC" secondAttribute="bottom" constant="40" id="E04-51-Bhb"/>
+                            <constraint firstItem="hf4-GI-hoZ" firstAttribute="top" secondItem="5e1-3n-0lC" secondAttribute="bottom" constant="20" id="E04-51-Bhb"/>
                             <constraint firstItem="fUp-Cr-2jq" firstAttribute="leading" secondItem="36s-kb-U6I" secondAttribute="leading" id="Exc-9g-kST"/>
                             <constraint firstItem="5e1-3n-0lC" firstAttribute="centerX" secondItem="m4Q-08-IUQ" secondAttribute="centerX" id="KU2-gT-CNC"/>
                             <constraint firstItem="5e1-3n-0lC" firstAttribute="top" secondItem="36s-kb-U6I" secondAttribute="top" constant="70" id="Mak-0e-LQV"/>
                             <constraint firstItem="36s-kb-U6I" firstAttribute="trailing" secondItem="fUp-Cr-2jq" secondAttribute="trailing" id="cQL-eS-Yb4"/>
                             <constraint firstItem="36s-kb-U6I" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5e1-3n-0lC" secondAttribute="trailing" constant="5" id="dz5-bM-Ayk"/>
-                            <constraint firstItem="36s-kb-U6I" firstAttribute="bottom" secondItem="fUp-Cr-2jq" secondAttribute="bottom" constant="30" id="old-Ab-2es"/>
+                            <constraint firstItem="36s-kb-U6I" firstAttribute="bottom" secondItem="fUp-Cr-2jq" secondAttribute="bottom" constant="10" id="old-Ab-2es"/>
                             <constraint firstItem="hf4-GI-hoZ" firstAttribute="centerX" secondItem="m4Q-08-IUQ" secondAttribute="centerX" id="qyG-sz-xYo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="36s-kb-U6I"/>
@@ -214,7 +214,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4i-xm-4ND">
-                                <rect key="frame" x="15" y="25" width="46" height="46"/>
+                                <rect key="frame" x="15" y="5" width="46" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="c7u-1d-r9f"/>
@@ -255,6 +255,6 @@
     <resources>
         <image name="circled-left" width="256" height="256"/>
         <image name="taxiColl" width="478" height="269"/>
-        <image name="taxibg" width="172.80000305175781" height="172.80000305175781"/>
+        <image name="taxibg" width="720" height="720"/>
     </resources>
 </document>
