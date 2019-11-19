@@ -20,6 +20,7 @@ class VehiclesViewModel: NSObject {
     weak var service: VehicleServiceProtocol?
     
     @objc var onErrorHandling: ((ErrorResult?) -> Void)?
+    @objc var fetchProgress: ((Bool) -> Void)?
     
     init(service: VehicleServiceProtocol = VehicleService.shared,
          dataSources: [VehiclesDataSource]?) {
@@ -37,21 +38,28 @@ class VehiclesViewModel: NSObject {
                       point2: Location.initialPoint2)
     }
     
+    @objc func cancelFetching() {
+        fetchProgress?(false)
+        service?.cancelFetchVehicles()
+    }
+    
     func fetchVehicles(point1: Location,
                        point2: Location) {
         guard let service = service else {
             onErrorHandling?(ErrorResult(.custom, "Missing service"))
             return
         }
+        fetchProgress?(true)
         service.fetchVehicles(from: point1,
-                              to: point2) { (result) in
+                              to: point2) { [weak self] (result) in
+                                self?.fetchProgress?(false)
                                 switch result {
                                 case .success(let vehicles) :
-                                    self.dataSources?.forEach({ (dataSource) in
+                                    self?.dataSources?.forEach({ (dataSource) in
                                         dataSource.data.value = vehicles ?? []
                                     })
                                 case .failure(let error) :
-                                    self.onErrorHandling?(error)
+                                    self?.onErrorHandling?(error)
                                 }
         }
     }

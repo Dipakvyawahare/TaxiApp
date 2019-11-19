@@ -47,6 +47,23 @@
 		472B8E9623843E9A00DB80D1 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8E9523843E9A00DB80D1 /* FileManagerExtensions.swift */; };
 		472B8E9823844BD900DB80D1 /* RequestServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8E9723844BD900DB80D1 /* RequestServiceTests.swift */; };
 		472B8E9A238451DF00DB80D1 /* VehicleMapViewDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8E99238451DF00DB80D1 /* VehicleMapViewDelegateTests.swift */; };
+		472B8EAE238465D300DB80D1 /* PKHUDSystemActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8E9C238465D300DB80D1 /* PKHUDSystemActivityIndicatorView.swift */; };
+		472B8EAF238465D300DB80D1 /* PKHUDAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8E9D238465D300DB80D1 /* PKHUDAnimation.swift */; };
+		472B8EB0238465D300DB80D1 /* PKHUDAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8E9E238465D300DB80D1 /* PKHUDAnimating.swift */; };
+		472B8EB1238465D300DB80D1 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8E9F238465D300DB80D1 /* FrameView.swift */; };
+		472B8EB2238465D300DB80D1 /* PKHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8EA0238465D300DB80D1 /* PKHUD.swift */; };
+		472B8EB3238465D300DB80D1 /* PKHUDSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8EA1238465D300DB80D1 /* PKHUDSuccessView.swift */; };
+		472B8EB4238465D300DB80D1 /* PKHUDAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8EA2238465D300DB80D1 /* PKHUDAssets.swift */; };
+		472B8EB5238465D300DB80D1 /* PKHUDWideBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8EA3238465D300DB80D1 /* PKHUDWideBaseView.swift */; };
+		472B8EB6238465D300DB80D1 /* PKHUDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8EA4238465D300DB80D1 /* PKHUDTextView.swift */; };
+		472B8EB7238465D300DB80D1 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8EA5238465D300DB80D1 /* HUD.swift */; };
+		472B8EB8238465D300DB80D1 /* PKHUDRotatingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8EA6238465D300DB80D1 /* PKHUDRotatingImageView.swift */; };
+		472B8EB9238465D300DB80D1 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8EA7238465D300DB80D1 /* Window.swift */; };
+		472B8EBA238465D300DB80D1 /* WindowRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8EA8238465D300DB80D1 /* WindowRootViewController.swift */; };
+		472B8EBB238465D300DB80D1 /* PKHUDProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8EA9238465D300DB80D1 /* PKHUDProgressView.swift */; };
+		472B8EBC238465D300DB80D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472B8EAA238465D300DB80D1 /* Images.xcassets */; };
+		472B8EBD238465D300DB80D1 /* PKHUDSquareBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8EAB238465D300DB80D1 /* PKHUDSquareBaseView.swift */; };
+		472B8EBE238465D300DB80D1 /* PKHUDErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B8EAC238465D300DB80D1 /* PKHUDErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +123,24 @@
 		472B8E9523843E9A00DB80D1 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		472B8E9723844BD900DB80D1 /* RequestServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestServiceTests.swift; sourceTree = "<group>"; };
 		472B8E99238451DF00DB80D1 /* VehicleMapViewDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMapViewDelegateTests.swift; sourceTree = "<group>"; };
+		472B8E9C238465D300DB80D1 /* PKHUDSystemActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDSystemActivityIndicatorView.swift; sourceTree = "<group>"; };
+		472B8E9D238465D300DB80D1 /* PKHUDAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDAnimation.swift; sourceTree = "<group>"; };
+		472B8E9E238465D300DB80D1 /* PKHUDAnimating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDAnimating.swift; sourceTree = "<group>"; };
+		472B8E9F238465D300DB80D1 /* FrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		472B8EA0238465D300DB80D1 /* PKHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUD.swift; sourceTree = "<group>"; };
+		472B8EA1238465D300DB80D1 /* PKHUDSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDSuccessView.swift; sourceTree = "<group>"; };
+		472B8EA2238465D300DB80D1 /* PKHUDAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDAssets.swift; sourceTree = "<group>"; };
+		472B8EA3238465D300DB80D1 /* PKHUDWideBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDWideBaseView.swift; sourceTree = "<group>"; };
+		472B8EA4238465D300DB80D1 /* PKHUDTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDTextView.swift; sourceTree = "<group>"; };
+		472B8EA5238465D300DB80D1 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		472B8EA6238465D300DB80D1 /* PKHUDRotatingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDRotatingImageView.swift; sourceTree = "<group>"; };
+		472B8EA7238465D300DB80D1 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		472B8EA8238465D300DB80D1 /* WindowRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowRootViewController.swift; sourceTree = "<group>"; };
+		472B8EA9238465D300DB80D1 /* PKHUDProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDProgressView.swift; sourceTree = "<group>"; };
+		472B8EAA238465D300DB80D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		472B8EAB238465D300DB80D1 /* PKHUDSquareBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDSquareBaseView.swift; sourceTree = "<group>"; };
+		472B8EAC238465D300DB80D1 /* PKHUDErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDErrorView.swift; sourceTree = "<group>"; };
+		472B8EAD238465D300DB80D1 /* PKHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKHUD.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				472B8E7323839A6100DB80D1 /* Reachability.swift */,
+				472B8E9B238465D300DB80D1 /* PKHUD */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -280,6 +316,31 @@
 				472B8E7623839AE700DB80D1 /* RequestService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		472B8E9B238465D300DB80D1 /* PKHUD */ = {
+			isa = PBXGroup;
+			children = (
+				472B8E9C238465D300DB80D1 /* PKHUDSystemActivityIndicatorView.swift */,
+				472B8E9D238465D300DB80D1 /* PKHUDAnimation.swift */,
+				472B8E9E238465D300DB80D1 /* PKHUDAnimating.swift */,
+				472B8E9F238465D300DB80D1 /* FrameView.swift */,
+				472B8EA0238465D300DB80D1 /* PKHUD.swift */,
+				472B8EA1238465D300DB80D1 /* PKHUDSuccessView.swift */,
+				472B8EA2238465D300DB80D1 /* PKHUDAssets.swift */,
+				472B8EA3238465D300DB80D1 /* PKHUDWideBaseView.swift */,
+				472B8EA4238465D300DB80D1 /* PKHUDTextView.swift */,
+				472B8EA5238465D300DB80D1 /* HUD.swift */,
+				472B8EA6238465D300DB80D1 /* PKHUDRotatingImageView.swift */,
+				472B8EA7238465D300DB80D1 /* Window.swift */,
+				472B8EA8238465D300DB80D1 /* WindowRootViewController.swift */,
+				472B8EA9238465D300DB80D1 /* PKHUDProgressView.swift */,
+				472B8EAA238465D300DB80D1 /* Images.xcassets */,
+				472B8EAB238465D300DB80D1 /* PKHUDSquareBaseView.swift */,
+				472B8EAC238465D300DB80D1 /* PKHUDErrorView.swift */,
+				472B8EAD238465D300DB80D1 /* PKHUD.h */,
+			);
+			path = PKHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				472B8E292382E77900DB80D1 /* LaunchScreen.storyboard in Resources */,
+				472B8EBC238465D300DB80D1 /* Images.xcassets in Resources */,
 				472B8E4E2382FC3A00DB80D1 /* MapView.xib in Resources */,
 				472B8E262382E77900DB80D1 /* Assets.xcassets in Resources */,
 				472B8E242382E77700DB80D1 /* Main.storyboard in Resources */,
@@ -426,20 +488,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472B8EAF238465D300DB80D1 /* PKHUDAnimation.swift in Sources */,
 				472B8E572383001900DB80D1 /* Vehicle.swift in Sources */,
+				472B8EB2238465D300DB80D1 /* PKHUD.swift in Sources */,
 				472B8E5D23830B7600DB80D1 /* VehiclesObserver.swift in Sources */,
+				472B8EBA238465D300DB80D1 /* WindowRootViewController.swift in Sources */,
 				472B8E9623843E9A00DB80D1 /* FileManagerExtensions.swift in Sources */,
+				472B8EB8238465D300DB80D1 /* PKHUDRotatingImageView.swift in Sources */,
+				472B8EAE238465D300DB80D1 /* PKHUDSystemActivityIndicatorView.swift in Sources */,
+				472B8EB7238465D300DB80D1 /* HUD.swift in Sources */,
 				472B8E6D23831B0100DB80D1 /* VehiclesViewModel.swift in Sources */,
 				472B8E1F2382E77700DB80D1 /* AppDelegate.swift in Sources */,
+				472B8EB0238465D300DB80D1 /* PKHUDAnimating.swift in Sources */,
 				472B8E4B2382F38200DB80D1 /* MKMapViewExtensions.swift in Sources */,
+				472B8EB6238465D300DB80D1 /* PKHUDTextView.swift in Sources */,
 				472B8E522382FEEB00DB80D1 /* VehicleMapViewDelegate.swift in Sources */,
+				472B8EB9238465D300DB80D1 /* Window.swift in Sources */,
 				472B8E6A23831A8500DB80D1 /* ErrorResult.swift in Sources */,
+				472B8EBD238465D300DB80D1 /* PKHUDSquareBaseView.swift in Sources */,
+				472B8EBB238465D300DB80D1 /* PKHUDProgressView.swift in Sources */,
 				472B8E7723839AE700DB80D1 /* RequestService.swift in Sources */,
 				472B8E592383008100DB80D1 /* Location.swift in Sources */,
 				472B8E6823831A6B00DB80D1 /* Result.swift in Sources */,
 				472B8E64238317C400DB80D1 /* DataParser.swift in Sources */,
 				472B8E7123831E4F00DB80D1 /* VehicleService.swift in Sources */,
+				472B8EB4238465D300DB80D1 /* PKHUDAssets.swift in Sources */,
 				472B8E502382FCDB00DB80D1 /* MapView.swift in Sources */,
+				472B8EB3238465D300DB80D1 /* PKHUDSuccessView.swift in Sources */,
 				472B8E542382FFB900DB80D1 /* VehiclePointAnnotation.swift in Sources */,
 				472B8E5B238300D900DB80D1 /* TaxiMapViewProtocol.swift in Sources */,
 				472B8E8C2383FA3F00DB80D1 /* VehicleCollectionViewCell.swift in Sources */,
@@ -450,7 +525,10 @@
 				472B8E6F23831CBE00DB80D1 /* VehiclesMapDataSource.swift in Sources */,
 				472B8E452382EA7700DB80D1 /* UIImageExtensions.swift in Sources */,
 				472B8E7923839B2900DB80D1 /* URLExtensions.swift in Sources */,
+				472B8EBE238465D300DB80D1 /* PKHUDErrorView.swift in Sources */,
+				472B8EB5238465D300DB80D1 /* PKHUDWideBaseView.swift in Sources */,
 				472B8E7423839A6100DB80D1 /* Reachability.swift in Sources */,
+				472B8EB1238465D300DB80D1 /* FrameView.swift in Sources */,
 				472B8E7D2383B42000DB80D1 /* DisplayFreeBoundVehicleViewController.m in Sources */,
 				472B8E622383175700DB80D1 /* DisplayFixedBoundVehicleViewController.swift in Sources */,
 			);
@@ -623,6 +701,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88J8X2632T;
 				INFOPLIST_FILE = TaxiApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -643,6 +722,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88J8X2632T;
 				INFOPLIST_FILE = TaxiApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

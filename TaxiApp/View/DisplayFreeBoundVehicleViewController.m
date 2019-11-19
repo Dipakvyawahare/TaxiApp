@@ -35,9 +35,24 @@
     [self viewModel].onErrorHandling = ^(ErrorResult *error) {
         [weakSelf showAlert: error.message];
     };
+   
+    [self viewModel].fetchProgress = ^(BOOL isLoading) {
+        if(isLoading) {
+            [[PKHUD sharedHUD] showOnView: nil];
+        } else {
+            [[PKHUD sharedHUD] hideWithAnimated: true
+                                     completion: nil];
+        }
+    };
     
     self.mapViewConfigurator.delegate = [self viewModel];
     [self.mapView resetFocus];
+    
+}
+    
+-(void) viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [viewModel cancelFetching];
 }
     
 -(VehiclesViewModel *) viewModel {
@@ -47,7 +62,7 @@
     return viewModel;
 }
     
--(void) backButtonPressed {
+-(IBAction) backButtonPressed {
     [self.navigationController popViewControllerAnimated: true];
 }
     

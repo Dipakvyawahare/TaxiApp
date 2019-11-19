@@ -21,8 +21,6 @@
  POSSIBILITY OF SUCH DAMAGE.
  */
 
-// swiftlint:disable all
-
 import SystemConfiguration
 import Foundation
 
@@ -294,4 +292,3 @@ fileprivate extension Reachability {
         }
     }
 }
-// swiftlint:enable all

@@ -28,6 +28,14 @@ class DisplayFixedBoundVehicleViewController: UIViewController {
         collectionView.delegate = self
         mapView.dataSource = mapViewDataSource
         mapView.delegate = mapViewConfigurator
+        viewModel.fetchProgress = { (isLoading) in
+            if isLoading == true {
+                PKHUD.sharedHUD.show()
+            } else {
+                PKHUD.sharedHUD.hide()
+            }
+        }
+        
         mapViewDataSource.data.addAndNotify(observer: self) { [weak self] in
             self?.mapView.reloadAnnotations()
             self?.mapView.fitMapViewToAnnotaionList()
@@ -40,6 +48,11 @@ class DisplayFixedBoundVehicleViewController: UIViewController {
         mapView.resetFocus()
         mapView.drawOverlay()
         viewModel.fetchVehicles()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        viewModel.cancelFetching()
     }
     
     func observeErrors() {
@@ -56,6 +69,10 @@ class DisplayFixedBoundVehicleViewController: UIViewController {
                           animated: true,
                           completion: nil)
         }
+    }
+    
+    @IBAction func backButtonTapped() {
+        navigationController?.popViewController(animated: true)
     }
 }
 
