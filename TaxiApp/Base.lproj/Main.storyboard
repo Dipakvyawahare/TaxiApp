@@ -1,24 +1,224 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EvR-6Y-UDn">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Free Map-->
+        <scene sceneID="ZYh-be-sPU">
+            <objects>
+                <viewController title="Free Map" id="DuJ-34-213" customClass="DisplayFreeBoundVehicleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8GQ-kJ-K7d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enU-QS-BD3" customClass="MapView" customModule="TaxiApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="enU-QS-BD3" firstAttribute="trailing" secondItem="Gfk-CH-9Wa" secondAttribute="trailing" id="OmA-vH-D0I"/>
+                            <constraint firstItem="enU-QS-BD3" firstAttribute="top" secondItem="8GQ-kJ-K7d" secondAttribute="top" id="WEt-RJ-Ypu"/>
+                            <constraint firstItem="enU-QS-BD3" firstAttribute="leading" secondItem="Gfk-CH-9Wa" secondAttribute="leading" id="fyw-CG-63L"/>
+                            <constraint firstItem="Gfk-CH-9Wa" firstAttribute="bottom" secondItem="enU-QS-BD3" secondAttribute="bottom" id="gBw-IP-bMr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gfk-CH-9Wa"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="enU-QS-BD3" id="whj-mp-aFE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWb-Zy-Q8j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="813"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d2Q-UI-eV0">
+            <objects>
+                <navigationController id="EvR-6Y-UDn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="phI-s3-4Ao">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="d8C-UX-Z6U" kind="relationship" relationship="rootViewController" id="A7X-Sk-pU2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vB2-hy-yCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1826" y="408"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="EQM-EO-hYe">
+            <objects>
+                <viewController title="Dashboard" id="d8C-UX-Z6U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m4Q-08-IUQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e1-3n-0lC">
+                                <rect key="frame" x="5" y="90" width="310" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Display Fixed Bounds Vehicles(1.1)"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="jm2-UO-82R"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taxibg" translatesAutoresizingMaskIntoConstraints="NO" id="fUp-Cr-2jq">
+                                <rect key="frame" x="0.0" y="356" width="320" height="172"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf4-GI-hoZ">
+                                <rect key="frame" x="52.5" y="166" width="215" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Display All Vehicles(1.2)"/>
+                                <connections>
+                                    <segue destination="DuJ-34-213" kind="show" id="lae-Ka-Tf9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5e1-3n-0lC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="36s-kb-U6I" secondAttribute="leading" constant="5" id="9ya-ny-D6g"/>
+                            <constraint firstItem="hf4-GI-hoZ" firstAttribute="top" secondItem="5e1-3n-0lC" secondAttribute="bottom" constant="40" id="E04-51-Bhb"/>
+                            <constraint firstItem="fUp-Cr-2jq" firstAttribute="leading" secondItem="36s-kb-U6I" secondAttribute="leading" id="Exc-9g-kST"/>
+                            <constraint firstItem="5e1-3n-0lC" firstAttribute="centerX" secondItem="m4Q-08-IUQ" secondAttribute="centerX" id="KU2-gT-CNC"/>
+                            <constraint firstItem="5e1-3n-0lC" firstAttribute="top" secondItem="36s-kb-U6I" secondAttribute="top" constant="70" id="Mak-0e-LQV"/>
+                            <constraint firstItem="36s-kb-U6I" firstAttribute="trailing" secondItem="fUp-Cr-2jq" secondAttribute="trailing" id="cQL-eS-Yb4"/>
+                            <constraint firstItem="36s-kb-U6I" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5e1-3n-0lC" secondAttribute="trailing" constant="5" id="dz5-bM-Ayk"/>
+                            <constraint firstItem="36s-kb-U6I" firstAttribute="bottom" secondItem="fUp-Cr-2jq" secondAttribute="bottom" constant="40" id="old-Ab-2es"/>
+                            <constraint firstItem="hf4-GI-hoZ" firstAttribute="centerX" secondItem="m4Q-08-IUQ" secondAttribute="centerX" id="qyG-sz-xYo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="36s-kb-U6I"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wt0-6S-u1a"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JtB-Nn-iaH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-810.39999999999998" y="410.64467766116945"/>
+        </scene>
+        <!--Fixed Map-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Fixed Map" id="BYZ-38-t0r" customClass="DisplayFixedBoundVehicleViewController" customModule="TaxiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bak-d9-pcG" customClass="MapView" customModule="TaxiApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="337"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8M-uW-FIO">
+                                <rect key="frame" x="0.0" y="358" width="320" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please pick a service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jf-BP-kDJ">
+                                        <rect key="frame" x="78.5" y="11" width="163.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HGF-mo-Ve0">
+                                        <rect key="frame" x="15" y="36.5" width="290" height="163.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aBg-Rb-FTU">
+                                            <size key="itemSize" width="140" height="130"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VehicleCollectionCellIdentifier" id="eIg-B8-Evp" customClass="VehicleCollectionViewCell" customModule="TaxiApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="17" width="140" height="130"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="130"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWW-gI-KqJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="140" height="130"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taxiColl" translatesAutoresizingMaskIntoConstraints="NO" id="ANJ-8D-BX5">
+                                                                    <rect key="frame" x="5" y="20" width="130" height="60"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="Sek-fY-0s3"/>
+                                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="130" id="md1-D4-c7U"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IZ-nN-L7F">
+                                                                    <rect key="frame" x="47.5" y="89" width="45" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="ANJ-8D-BX5" firstAttribute="top" secondItem="NWW-gI-KqJ" secondAttribute="top" constant="20" id="FNH-S4-dbx"/>
+                                                                <constraint firstAttribute="bottom" secondItem="4IZ-nN-L7F" secondAttribute="bottom" constant="20" id="QqU-uP-kMn"/>
+                                                                <constraint firstItem="ANJ-8D-BX5" firstAttribute="centerX" secondItem="NWW-gI-KqJ" secondAttribute="centerX" id="WOG-6N-V5h"/>
+                                                                <constraint firstItem="4IZ-nN-L7F" firstAttribute="centerX" secondItem="NWW-gI-KqJ" secondAttribute="centerX" id="Z6z-6S-mVX"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="NWW-gI-KqJ" firstAttribute="leading" secondItem="eIg-B8-Evp" secondAttribute="leading" id="2cv-yD-IRv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="NWW-gI-KqJ" secondAttribute="bottom" id="NG0-2a-xMI"/>
+                                                    <constraint firstItem="NWW-gI-KqJ" firstAttribute="top" secondItem="eIg-B8-Evp" secondAttribute="top" id="d2E-8k-4rA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="NWW-gI-KqJ" secondAttribute="trailing" id="p5F-3Y-IYV"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="fleetType" destination="4IZ-nN-L7F" id="uvy-mz-h7B"/>
+                                                    <outlet property="imageView" destination="ANJ-8D-BX5" id="U2g-QP-g9g"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="HGF-mo-Ve0" firstAttribute="leading" secondItem="p8M-uW-FIO" secondAttribute="leading" constant="15" id="1Gv-mR-HT4"/>
+                                    <constraint firstAttribute="trailing" secondItem="HGF-mo-Ve0" secondAttribute="trailing" constant="15" id="3so-q4-AnC"/>
+                                    <constraint firstItem="HGF-mo-Ve0" firstAttribute="top" secondItem="1Jf-BP-kDJ" secondAttribute="bottom" constant="5" id="LpN-Aw-aI5"/>
+                                    <constraint firstAttribute="bottom" secondItem="HGF-mo-Ve0" secondAttribute="bottom" id="NxP-CO-Rt9"/>
+                                    <constraint firstAttribute="height" constant="200" id="Pav-YW-SHq"/>
+                                    <constraint firstItem="1Jf-BP-kDJ" firstAttribute="centerX" secondItem="p8M-uW-FIO" secondAttribute="centerX" id="bqF-4A-quT"/>
+                                    <constraint firstItem="1Jf-BP-kDJ" firstAttribute="top" secondItem="p8M-uW-FIO" secondAttribute="top" constant="11" id="mOE-Ue-F4Y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bak-d9-pcG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2je-Uy-qJj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p8M-uW-FIO" secondAttribute="bottom" constant="10" id="37y-s3-dQe"/>
+                            <constraint firstItem="bak-d9-pcG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pee-sA-QwW"/>
+                            <constraint firstItem="p8M-uW-FIO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zc5-b9-qZ9"/>
+                            <constraint firstItem="p8M-uW-FIO" firstAttribute="top" secondItem="bak-d9-pcG" secondAttribute="bottom" constant="1" id="bAk-NE-3ak"/>
+                            <constraint firstAttribute="trailing" secondItem="p8M-uW-FIO" secondAttribute="trailing" id="dCG-k7-sUs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bak-d9-pcG" secondAttribute="trailing" id="lHv-SQ-Mo7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="HGF-mo-Ve0" id="G9b-6U-a3N"/>
+                        <outlet property="mapView" destination="bak-d9-pcG" id="jua-yL-yhw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.75" y="24.295774647887324"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="taxiColl" width="478" height="269"/>
+        <image name="taxibg" width="172.80000305175781" height="172.80000305175781"/>
+    </resources>
 </document>
