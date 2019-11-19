@@ -19,7 +19,8 @@ class VehiclesCollectionViewDataSource: NSObject, VehiclesDataSource, UICollecti
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VehicleCollectionCellIdentifier", for: indexPath as IndexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier:
+            "VehicleCollectionCellIdentifier", for: indexPath as IndexPath)
         if let cell = cell as? VehicleCollectionViewCell {
             cell.vehicle = data.value[indexPath.item]
             let shouldShowSelected = indexPath.item != selectedIndex

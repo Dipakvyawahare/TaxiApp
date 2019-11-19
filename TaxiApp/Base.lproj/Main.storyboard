@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EvR-6Y-UDn">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EvR-6Y-UDn">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +22,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8d-Aq-ngx">
-                                <rect key="frame" x="15" y="5" width="46" height="46"/>
+                                <rect key="frame" x="15" y="25" width="46" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="lPK-yO-NfH"/>
@@ -39,7 +40,7 @@
                             <constraint firstItem="enU-QS-BD3" firstAttribute="trailing" secondItem="Gfk-CH-9Wa" secondAttribute="trailing" id="OmA-vH-D0I"/>
                             <constraint firstItem="enU-QS-BD3" firstAttribute="top" secondItem="8GQ-kJ-K7d" secondAttribute="top" id="WEt-RJ-Ypu"/>
                             <constraint firstItem="enU-QS-BD3" firstAttribute="leading" secondItem="Gfk-CH-9Wa" secondAttribute="leading" id="fyw-CG-63L"/>
-                            <constraint firstItem="Gfk-CH-9Wa" firstAttribute="bottom" secondItem="enU-QS-BD3" secondAttribute="bottom" id="gBw-IP-bMr"/>
+                            <constraint firstAttribute="bottom" secondItem="enU-QS-BD3" secondAttribute="bottom" id="gBw-IP-bMr"/>
                             <constraint firstItem="l8d-Aq-ngx" firstAttribute="top" secondItem="Gfk-CH-9Wa" secondAttribute="top" constant="5" id="ygv-YG-0mt">
                                 <variation key="heightClass=regular-widthClass=regular" constant="15"/>
                             </constraint>
@@ -85,7 +86,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e1-3n-0lC">
-                                <rect key="frame" x="5" y="70" width="310" height="36"/>
+                                <rect key="frame" x="5" y="90" width="310" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <state key="normal" title="Display Fixed Bounds Vehicles(1.1)"/>
@@ -94,7 +95,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf4-GI-hoZ">
-                                <rect key="frame" x="52.5" y="126" width="215" height="36"/>
+                                <rect key="frame" x="52.5" y="146" width="215" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <state key="normal" title="Display All Vehicles(1.2)"/>
@@ -133,11 +134,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bak-d9-pcG" customClass="MapView" customModule="TaxiApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="366"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8M-uW-FIO">
-                                <rect key="frame" x="0.0" y="367" width="320" height="200"/>
+                                <rect key="frame" x="0.0" y="368" width="320" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please pick a service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jf-BP-kDJ">
                                         <rect key="frame" x="78.5" y="11" width="163.5" height="20.5"/>
@@ -214,7 +215,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4i-xm-4ND">
-                                <rect key="frame" x="15" y="5" width="46" height="46"/>
+                                <rect key="frame" x="15" y="25" width="46" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="c7u-1d-r9f"/>
@@ -229,7 +230,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bak-d9-pcG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2je-Uy-qJj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p8M-uW-FIO" secondAttribute="bottom" constant="1" id="37y-s3-dQe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p8M-uW-FIO" secondAttribute="bottom" id="37y-s3-dQe"/>
                             <constraint firstItem="s4i-xm-4ND" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="NtT-oV-wxb"/>
                             <constraint firstItem="bak-d9-pcG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pee-sA-QwW"/>
                             <constraint firstItem="p8M-uW-FIO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zc5-b9-qZ9"/>
@@ -255,6 +256,6 @@
     <resources>
         <image name="circled-left" width="256" height="256"/>
         <image name="taxiColl" width="478" height="269"/>
-        <image name="taxibg" width="720" height="720"/>
+        <image name="taxibg" width="172.80000305175781" height="172.80000305175781"/>
     </resources>
 </document>
