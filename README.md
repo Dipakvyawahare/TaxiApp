@@ -1,5 +1,5 @@
 # TaxiApp
-- Created for demo test given by Free Now.
+- Created for demo for MVVM.
 
 ## Features
 
