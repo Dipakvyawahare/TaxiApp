@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EvR-6Y-UDn">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EvR-6Y-UDn">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +21,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8d-Aq-ngx">
-                                <rect key="frame" x="15" y="25" width="46" height="46"/>
+                                <rect key="frame" x="15" y="5" width="46" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="lPK-yO-NfH"/>
@@ -34,6 +33,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gfk-CH-9Wa"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="l8d-Aq-ngx" firstAttribute="leading" secondItem="Gfk-CH-9Wa" secondAttribute="leading" constant="15" id="Crl-hC-EdK"/>
@@ -45,7 +45,6 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="15"/>
                             </constraint>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Gfk-CH-9Wa"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="enU-QS-BD3" id="whj-mp-aFE"/>
@@ -85,8 +84,8 @@
                                     <constraint firstAttribute="width" secondItem="fUp-Cr-2jq" secondAttribute="height" multiplier="80:43" id="fa5-kG-8Dl"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e1-3n-0lC">
-                                <rect key="frame" x="5" y="90" width="310" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e1-3n-0lC">
+                                <rect key="frame" x="5.5" y="70" width="309" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <state key="normal" title="Display Fixed Bounds Vehicles(1.1)"/>
@@ -94,8 +93,8 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="jm2-UO-82R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf4-GI-hoZ">
-                                <rect key="frame" x="52.5" y="146" width="215" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf4-GI-hoZ">
+                                <rect key="frame" x="53" y="126" width="214" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <state key="normal" title="Display All Vehicles(1.2)"/>
@@ -104,6 +103,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="36s-kb-U6I"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5e1-3n-0lC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="36s-kb-U6I" secondAttribute="leading" constant="5" id="9ya-ny-D6g"/>
@@ -116,7 +116,6 @@
                             <constraint firstItem="36s-kb-U6I" firstAttribute="bottom" secondItem="fUp-Cr-2jq" secondAttribute="bottom" constant="10" id="old-Ab-2es"/>
                             <constraint firstItem="hf4-GI-hoZ" firstAttribute="centerX" secondItem="m4Q-08-IUQ" secondAttribute="centerX" id="qyG-sz-xYo"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="36s-kb-U6I"/>
                     </view>
                     <navigationItem key="navigationItem" id="Wt0-6S-u1a"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -141,7 +140,7 @@
                                 <rect key="frame" x="0.0" y="368" width="320" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please pick a service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jf-BP-kDJ">
-                                        <rect key="frame" x="78.5" y="11" width="163.5" height="20.5"/>
+                                        <rect key="frame" x="79" y="11" width="162.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -176,7 +175,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IZ-nN-L7F">
                                                                     <rect key="frame" x="47.5" y="89" width="45" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <color key="textColor" systemColor="darkTextColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -215,7 +214,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4i-xm-4ND">
-                                <rect key="frame" x="15" y="25" width="46" height="46"/>
+                                <rect key="frame" x="15" y="5" width="46" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="c7u-1d-r9f"/>
@@ -227,6 +226,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bak-d9-pcG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2je-Uy-qJj"/>
@@ -241,7 +241,6 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="15"/>
                             </constraint>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="HGF-mo-Ve0" id="G9b-6U-a3N"/>
@@ -256,6 +255,9 @@
     <resources>
         <image name="circled-left" width="256" height="256"/>
         <image name="taxiColl" width="478" height="269"/>
-        <image name="taxibg" width="172.80000305175781" height="172.80000305175781"/>
+        <image name="taxibg" width="720" height="720"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

@@ -3,8 +3,8 @@
 
 ## Features
 
-- [x] Show Map for Hamburg
-- [x] Free Map
+- [x] Show Map for City
+- [x] Map
 
 ## Requirements
 - Swift 4.2+

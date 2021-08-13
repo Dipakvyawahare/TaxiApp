@@ -8,7 +8,7 @@
 
 import Foundation
 
-let endPoint = URL(string: "https://fake-poi-api.mytaxi.com")!
+let endPoint = URL(string: "")!
 
 protocol RequestServiceProtocol {
     @discardableResult func fetchData(using params: [String: String],
